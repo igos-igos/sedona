@@ -1,0 +1,68 @@
+.motel-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px 50px;
+  text-align: center;
+
+  b {
+    margin-bottom: 18px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+
+  p {
+    margin-bottom: 32px;
+    max-width: 458px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  &__btn {
+    padding: 17px;
+    width: 100%;
+    max-width: 458px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    color: #ffffff;
+    background-color: $btn-regular;
+
+    &:hover{
+      background-color: $btn-hover;
+    }
+
+    &:active{
+      color: darken(#ffffff, 20%);
+      background-color: $btn-down;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .motel-search {
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-left: 155px;
+    padding-right: 155px;
+
+    b {
+      margin-bottom: 28px;
+      font-size: 30px;
+    }
+
+    p {
+
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .motel-search {
+    p {
+      margin-bottom: 47px;
+    }
+  }
+}

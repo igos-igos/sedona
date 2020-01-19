@@ -1,0 +1,77 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 36px;
+
+  b {
+    margin-bottom: 40px;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+  }
+}
+
+.social-list {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+
+  &__link {
+    display: inline-block;
+    margin-right: 6px;
+    width: 46px;
+    height: 48px;
+
+    background-color: $btn-regular;
+
+    &:hover {
+      background-color: $btn-hover;
+    }
+
+    &:active {
+      background-color: $btn-down;
+    }
+  }
+
+  &__link--twitter {
+    background-image: url(../img/icon/icon-twitter.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__link--facebook {
+    background-image: url(../img/icon/icon-facebook.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__link--youtube {
+    background-image: url(../img/icon/icon-youtube.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    b {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    margin-top: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}

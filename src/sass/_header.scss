@@ -1,0 +1,28 @@
+.main-header {
+  &__bg {
+    margin-top: -27px;
+    height: 389px;
+    background-image: url(../img/background/header-bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+@media (min-width: $tablet-width){
+  .main-header {
+    &__bg {
+      height: 518px;
+      background-image: url(../img/background/header-bg-desktop.jpg);
+    }
+  }
+}
+
+@media (min-width: $desktop-width){
+  .main-header {
+    &__bg {
+      margin-top: -40px;
+      background-image: url(../img/background/header-bg-desktop.jpg);
+    }
+  }
+}
