@@ -260,7 +260,7 @@
 
       position: absolute;
       top: -100px;
-      left: 3rem;
+      left: 33%;
       width: 75px;
       height: 72px;
 
@@ -275,7 +275,7 @@
 
       position: absolute;
       top: -102px;
-      left: 58px;
+      left: 33%;
       width: 64px;
       height: 75px;
 
@@ -290,7 +290,7 @@
 
       position: absolute;
       top: -100px;
-      left: 56px;
+      left: 33%;
       width: 77px;
       height: 68px;
 
@@ -306,6 +306,20 @@
       }
     }
   }
+}
+@media (min-width: 1000px){
+  .advantages{
+    &__title--house::before{
+      left: 36%;
+    }
+    &__title--gift::before{
+      left: 36%;
+    }
+    &__title--burger::before{
+      left: 36%;
+    }
+  }
+
 }
 
 @media (min-width: $desktop-width){

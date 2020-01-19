@@ -586,7 +586,7 @@ input[type="radio"].visually-hidden {
     content: "";
     position: absolute;
     top: -100px;
-    left: 3rem;
+    left: 33%;
 
     width: 75px;
     height: 72px;
@@ -600,7 +600,7 @@ input[type="radio"].visually-hidden {
     content: "";
     position: absolute;
     top: -102px;
-    left: 58px;
+    left: 33%;
 
     width: 64px;
     height: 75px;
@@ -614,7 +614,7 @@ input[type="radio"].visually-hidden {
     content: "";
     position: absolute;
     top: -100px;
-    left: 56px;
+    left: 33%;
 
     width: 77px;
     height: 68px;
@@ -626,6 +626,20 @@ input[type="radio"].visually-hidden {
 
   .advantages__item--decore-line::after {
     display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .advantages__title--house::before {
+    left: 36%;
+  }
+
+  .advantages__title--gift::before {
+    left: 36%;
+  }
+
+  .advantages__title--burger::before {
+    left: 36%;
   }
 }
 
